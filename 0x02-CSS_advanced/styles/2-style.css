@@ -1,10 +1,10 @@
 /*setting colors of elements*/
-body::before {
-    background-color: #161616;
+body {
+    background: #161616;
 }
 
 a {
-    background-color: #161616;
+    background: #161616;
 }
 
 .visually-hidden {
@@ -12,9 +12,9 @@ a {
 }
 
 .card-category {
-    background-color: #D73953;
+    background: #D73953;
 }
 
 .section-tagline {
-    background-color: #D73953;
+    background: #D73953;
 }
