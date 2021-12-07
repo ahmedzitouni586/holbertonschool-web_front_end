@@ -1,0 +1,20 @@
+/*setting colors of elements*/
+body {
+    background-color: #161616;
+}
+
+a {
+    background-color: #161616;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+.card-category {
+    background-color: #D73953;
+}
+
+.section-tagline {
+    background-color: #D73953;
+}
