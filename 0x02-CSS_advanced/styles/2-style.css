@@ -1,5 +1,5 @@
 /*setting colors of elements*/
-body {
+body::before {
     background-color: #161616;
 }
 
