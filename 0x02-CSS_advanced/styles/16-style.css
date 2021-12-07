@@ -94,6 +94,5 @@ a:active {
 
 .container {
     width: 960px;
-    margin-left: 960px;
-    margin-right: 960px;
+    text-align: justify;
 }
