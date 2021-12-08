@@ -54,7 +54,7 @@
     --header-logo-link-top: -1rem;
     --header-logo-link-left: 0;
     --nav-item-link-hover: var(--color-white);
-    --transition-duration: 0.3s;
+    --transition-duration: .3s;
     --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
 }
 
@@ -134,7 +134,7 @@ a:active {
     text-decoration: var(--button-hover-text-decoration);
     background-color: var(--button-hover-background);
     transition-duration: var(--transition-duration);
-    transition-property: var(--transition-property);
+    transition-property: color, background-color;
 }
 
 .visually-hidden {
@@ -290,7 +290,7 @@ ul.row {
     background-color: var(--color-white);
     width: 0;
     height: 0.2rem;
-    transition: var(--–transition-duration) var(--transition-cubic-bezier);
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .nav .nav-item:hover > .nav-link::before {
@@ -349,7 +349,7 @@ ul.row {
 
 .card-work:hover .card-image {
     transform: scale(1.2);
-    transition: var(–transition-duration) var(transition-cubic-bezier);
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .card-work:hover .card-outer {
