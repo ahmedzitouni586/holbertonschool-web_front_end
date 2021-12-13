@@ -1,0 +1,11 @@
+/*if statement*/
+
+h1 {
+    font-size: 20px;
+}
+
+@if width < 320px {
+    h1 {
+        font-size: 14px;
+    }
+}
