@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Task 3</title>
+        <script type="application/javascript" src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+    </head>
+    
+    <body>
+        
+    </body>
+    <script type="application/javascript">
+        function createFamilyTree(){
+            $('body').append('<table></table>');
+            $('body table').append('<thead></theade>');
+            $('body table thead').append('<tr></tr>');
+            $('body table thead tr').append('<th id="firstname"></th>');
+            $('body table thead tr').append('<th id="lastname"></th>');
+            $('body table').append('<tbody></tbody>');
+            $('body table tbody').append('<tr id="first"></tr>');
+            $('body table tbody tr#first').append('<td id="guillaume"></td>');
+            $('body table tbody tr#first').append('<td id="salva"></td>');
+            $('body table tbody').append('<tr id="second"></tr>');
+            $('body table tbody tr#second').append('<td id="paulette"></td>');
+            $('body table tbody tr#second').append('<td id="salva"></td>');
+            $('body table tbody').append('<tr id="third"></tr>');
+            $('body table tbody tr#third').append('<td id="antoine"></td>');
+            $('body table tbody tr#third').append('<td id="salva"></td>');
+            $('th#firstname').text('Firstname');
+            $('th#lastname').text('Lastname');
+            $('td#guillaume').text('Guillaume');
+            $('td#salva').text('Salva');
+            $('td#paulette').text('Paulette');
+            $('td#antoine').text('Antoine');
+        }
+        createFamilyTree();
+    </script>
+
+</html>

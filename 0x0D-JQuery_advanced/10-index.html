@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Task 7</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        
+    </head>
+
+    <body>
+        
+    </body>
+    <script>
+        
+        
+
+        function listPosts() {
+            $.ajax({
+                url: 'db.json',
+                dataType: 'json',
+                type: 'get',
+                success: function addPostRow(data){
+                    $('body').append('<p></p>');
+                    $('p').append('<span></span>')
+                    $.each(data.posts, function(key, value) {
+                        id = value.id;
+                        title = value.title;
+                        author = value.author;
+                        $('p').append('<span>Post created with id '+id+', title: '+title+', author: '+author+'</span><br>');
+                        
+                    })
+                },
+                error: function() {
+                    alert('Server Error')
+                }
+            })
+        }
+        $( document ).ready(function() {
+            listPosts();
+        });
+        
+        
+       
+    </script>
+</html>
