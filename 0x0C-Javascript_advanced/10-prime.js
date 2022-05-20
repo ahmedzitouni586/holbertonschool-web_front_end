@@ -15,7 +15,7 @@ function countPrimeNumbers() {
     return count + 1;
 }
 let t1 = performance.now();
-for (let y = 0; y <= 100; y++) {
+for (let y = 0; y < 100; y++) {
     countPrimeNumbers();
 }
 
